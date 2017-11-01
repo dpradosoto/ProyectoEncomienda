@@ -75,7 +75,7 @@
                                       
 
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="/encomienda.jsp">Encomienda</a></li>
+                                    <li><a href="encomienda.jsp">Encomienda</a></li>
                                     <li><a href="#">Traking</a></li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
