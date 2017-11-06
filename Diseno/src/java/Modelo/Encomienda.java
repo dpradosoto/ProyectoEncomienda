@@ -42,6 +42,15 @@ public class Encomienda implements Serializable {
     @Column(name = "Peso")
     private String peso;
     @Size(max = 45)
+    @Column(name = "Largo")
+    private Integer largo;
+    @Size(max = 3)
+    @Column(name = "Ancho")
+    private Integer ancho;
+    @Size(max = 3)
+    @Column(name = "Alto")
+    private Integer alto;
+    @Size(max = 3)
     @Column(name = "Descripcion")
     private String descripcion;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "encomiendaidEncomienda")
@@ -51,10 +60,13 @@ public class Encomienda implements Serializable {
         
     }
 
-    public Encomienda(Integer idEncomienda, String tipoEncomienda, String peso, String descripcion, Collection<Servicio> servicioCollection) {
+    public Encomienda(Integer idEncomienda, String tipoEncomienda, String peso, Integer largo, Integer ancho, Integer alto , String descripcion, Collection<Servicio> servicioCollection) {
         this.idEncomienda = idEncomienda;
         this.tipoEncomienda = tipoEncomienda;
         this.peso = peso;
+          this.largo = largo;
+            this.ancho = ancho;
+              this.alto = alto;
         this.descripcion = descripcion;
         this.servicioCollection = servicioCollection;
     }
@@ -86,6 +98,27 @@ public class Encomienda implements Serializable {
 
     public void setPeso(String peso) {
         this.peso = peso;
+    }
+      public Integer getLargo() {
+        return largo;
+    }
+
+    public void setLargo(Integer largo) {
+        this.largo = largo;
+    }
+      public Integer getAlto() {
+        return alto;
+    }
+
+    public void setAlto(Integer alto) {
+        this.alto = alto;
+    }
+      public Integer getAncho() {
+        return ancho;
+    }
+
+    public void setAncho(Integer ancho) {
+        this.ancho = ancho;
     }
 
     public String getDescripcion() {

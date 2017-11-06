@@ -1,4 +1,4 @@
-package modelo;
+package DAO;
 
 
 import java.sql.Connection;
@@ -20,6 +20,7 @@ import javax.swing.JOptionPane;
 public class conexion {
          Connection conectar=null;
          Statement ps=null;
+         
 public Connection conexion(){   
   try{
     Class.forName("org.gjt.mm.mysql.Driver");//.newInstance();
@@ -31,9 +32,7 @@ public Connection conexion(){
                                    }catch(ClassNotFoundException ex) {                                                                }
   return conectar;
 }
-    public static void main(String[] args) {
-        conexion ct=new conexion();
-        ct.conexion();
-    }
+  
+
 }
 

@@ -79,11 +79,11 @@
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Servicio A</a></li>
                                             <li><a href="#">Servicio B</a></li>
-                                            <li><a href="#">Servicio C</a></li>
+                             
                                             <li role="separator" class="divider"></li>
-                                            <li><a href="#">Todos los servicios</a></li>
+                                     
                                         </ul>
-                                    <li><a href="#">Contacto</a></li>
+                                 
 
                                 </ul>
                             </div>

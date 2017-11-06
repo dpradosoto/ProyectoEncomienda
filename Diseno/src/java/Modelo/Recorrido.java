@@ -41,16 +41,24 @@ public class Recorrido implements Serializable {
     @Size(max = 45)
     @Column(name = "Salida")
     private String salida;
+    @Size(max = 60)
+    @Column(name = "DireccionRetiro")
+    private String retiro;
+    @Size(max = 60)
+    @Column(name = "DireccionEnvio")
+    private String envio;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "recorridoidRecorrido")
     private Collection<Servicio> servicioCollection;
 
     public Recorrido() {
     }
 
-    public Recorrido(Integer idRecorrido, String llegada, String salida, Collection<Servicio> servicioCollection) {
+    public Recorrido(Integer idRecorrido, String llegada, String salida, String retiro ,String envio, Collection<Servicio> servicioCollection) {
         this.idRecorrido = idRecorrido;
         this.llegada = llegada;
         this.salida = salida;
+          this.retiro = retiro;
+        this.envio = envio;
         this.servicioCollection = servicioCollection;
     }
     
@@ -81,6 +89,23 @@ public class Recorrido implements Serializable {
     public void setSalida(String salida) {
         this.salida = salida;
     }
+    
+       public String getRetiro() {
+        return retiro;
+    }
+
+    public void setRetiro(String retiro) {
+        this.retiro = retiro;
+    }
+
+    public String getEnvio() {
+        return envio;
+    }
+
+    public void setEnvio(String envio) {
+        this.envio = envio;
+    }
+
 
     public Collection<Servicio> getServicioCollection() {
         return servicioCollection;

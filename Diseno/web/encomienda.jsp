@@ -82,11 +82,10 @@
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Servicio A</a></li>
                                             <li><a href="#">Servicio B</a></li>
-                                            <li><a href="#">Servicio C</a></li>
+                                            
                                             <li role="separator" class="divider"></li>
-                                            <li><a href="#">Todos los servicios</a></li>
+
                                         </ul>
-                                    <li><a href="#">Contacto</a></li>
 
                                 </ul>
                             </div>
@@ -131,12 +130,17 @@
                                 <div class="well row">
                                     <h5>Tamaño (Cm.)</h5> 
                                     <div class="form-group ">
-                                        <label for="rut">Base:</label>
-                                        <input type="text" class="form-control" name="base">
+                                        <label for="rut">Largo:</label>
+                                        <input type="text" class="form-control" name="largo">
                                     </div>
                                     <div class="form-group">
-                                        <label for="nombre">Altura:</label>
-                                        <input type="text" class="form-control" name="altura">
+                                        <label for="nombre">Alto:</label>
+                                        <input type="text" class="form-control" name="alto">
+
+                                    </div>
+                                      <div class="form-group">
+                                        <label for="nombre">Ancho:</label>
+                                        <input type="text" class="form-control" name="ancho">
 
                                     </div>
                                 </div>
@@ -177,9 +181,9 @@
                             <div>
                                 <select class="form-control" name="cargo">
                                     <option value="">Eliga un Metodo</option>
-                                    <option value="basica">Khipu</option>
-                                    <option value="media">Web Pay</option>
-                                    <option value="superior">Paypal</option>
+                                    <option value="basica">Efectivo</option>
+                                    <option value="media">Tarjeta Credito</option>
+                                    <option value="superior">Tarjeta Debito</option>
                                 </select>
                             </div>
                         </div> 
