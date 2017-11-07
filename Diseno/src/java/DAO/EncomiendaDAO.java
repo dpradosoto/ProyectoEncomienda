@@ -12,8 +12,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 import Modelo.Encomienda;
-import Modelo.Recorrido;
-import Modelo.Mediopago;
+
+
 
 /**
  *
@@ -29,25 +29,42 @@ public class EncomiendaDAO {
         connection = con.conexion();
 
     }
-
-    public void addEncomienda(Encomienda encomienda, Recorrido recorrido, Mediopago mediopago) {
+    
+    public void addEncomienda(String tipo, String peso, String largo, String alto, String ancho, String descripcion) {
 
         try {
-            // Llegano de Tablas encomienda, recorrido y mediopago
-            String query = "insert into encomienda (  TipoEncomienda, Peso, Largo, Alto, Ancho, Descripcion)values ( '" + encomienda.getTipoEncomienda() + "', '" + encomienda.getPeso() + "','" + encomienda.getLargo() + "','" + encomienda.getAlto() + "','" + encomienda.getAncho() + "','" + encomienda.getDescripcion() + "')";
+            // Llenado de Tablas encomienda
+            
+           
+            String query = "insert into encomienda (  TipoEncomienda, Peso, Largo, Alto, Ancho, Descripcion)values ( '" + tipo + "', '" + peso + "','" + largo + "','" + alto + "','" + ancho + "','" + descripcion + "')";
 
-            String query1 = "insert into recorrido (  Llegada, Salida, DireccionRetiro, DireccionEnvio)values ('" + recorrido.getLlegada() + "', '" + recorrido.getSalida() + "','" + recorrido.getRetiro() + "','" + recorrido.getEnvio() + "')";
-
-            String query2 = "insert into mediopago (  Efectivo, TarjetaCredito, TarjetaDebito)values ('" + mediopago.getEfectivo() + "', '" + mediopago.getTarjetaCredito() + "','" + mediopago.getTarjetaDebito() + "')";
-
+           
             Statement stmt = connection.createStatement();
             stmt.executeUpdate(query);
-            stmt.executeUpdate(query1);
-            stmt.executeUpdate(query2);
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
     }
+    
 
+   /* public void addEncomienda(Encomienda encomienda) {
+
+        try {
+            // Llenado de Tablas encomienda
+            
+           
+            String query = "insert into encomienda (  TipoEncomienda, Peso, Largo, Alto, Ancho, Descripcion)values ( '" + encomienda.getTipoEncomienda() + "', '" + encomienda.getPeso() + "','" + encomienda.getLargo() + "','" + encomienda.getAlto() + "','" + encomienda.getAncho() + "','" + encomienda.getDescripcion() + "')";
+
+           
+            Statement stmt = connection.createStatement();
+            stmt.executeUpdate(query);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+*/
 }

@@ -171,7 +171,7 @@
 
                             <div class="form-group">
                                 <label for="Sbase">Direccion Envío:</label>
-                                <input type="text" class="form-control" name="Dretiro">
+                                <input type="text" class="form-control" name="Denvio">
                             </div>
                             <div class="form-group">
                                 <label for="Sbase">Nombre Receptor:</label>
