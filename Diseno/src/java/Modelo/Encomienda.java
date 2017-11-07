@@ -43,13 +43,13 @@ public class Encomienda implements Serializable {
     private String peso;
     @Size(max = 45)
     @Column(name = "Largo")
-    private Integer largo;
+    private String largo;
     @Size(max = 3)
     @Column(name = "Ancho")
-    private Integer ancho;
+    private String ancho;
     @Size(max = 3)
     @Column(name = "Alto")
-    private Integer alto;
+    private String alto;
     @Size(max = 3)
     @Column(name = "Descripcion")
     private String descripcion;
@@ -60,7 +60,7 @@ public class Encomienda implements Serializable {
         
     }
 
-    public Encomienda(Integer idEncomienda, String tipoEncomienda, String peso, Integer largo, Integer ancho, Integer alto , String descripcion, Collection<Servicio> servicioCollection) {
+    public Encomienda(Integer idEncomienda, String tipoEncomienda, String peso, String largo, String ancho, String alto , String descripcion, Collection<Servicio> servicioCollection) {
         this.idEncomienda = idEncomienda;
         this.tipoEncomienda = tipoEncomienda;
         this.peso = peso;
@@ -99,25 +99,25 @@ public class Encomienda implements Serializable {
     public void setPeso(String peso) {
         this.peso = peso;
     }
-      public Integer getLargo() {
+      public String getLargo() {
         return largo;
     }
 
-    public void setLargo(Integer largo) {
+    public void setLargo(String largo) {
         this.largo = largo;
     }
-      public Integer getAlto() {
+      public String getAlto() {
         return alto;
     }
 
-    public void setAlto(Integer alto) {
+    public void setAlto(String alto) {
         this.alto = alto;
     }
-      public Integer getAncho() {
+      public String getAncho() {
         return ancho;
     }
 
-    public void setAncho(Integer ancho) {
+    public void setAncho(String ancho) {
         this.ancho = ancho;
     }
 

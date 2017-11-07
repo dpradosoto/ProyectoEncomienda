@@ -36,17 +36,13 @@ public class EncomiendaDAO {
         
         try {
 
-            String query = "insert into encomienda ( idEncomienda, TipoEncomienda, Peso, Largo, Alto, Ancho, Descripcion) values (' ' ,"
-                    + " '" + encomienda.getTipoEncomienda() + "', '" + encomienda.getPeso() + "',"
+            String query = "insert into encomienda (  TipoEncomienda, Peso, Largo, Alto, Ancho, Descripcion)values ( '" + encomienda.getTipoEncomienda() + "', '" + encomienda.getPeso() + "',"
                     + " '" + encomienda.getLargo() + "','" + encomienda.getAlto() + "','" + encomienda.getAncho() + "','" + encomienda.getDescripcion() + "')";
             
-            String query1 = "insert into recorrido ( idRecorrido, LLegada, Salida, DireccionRetiro, DireccionEnvio) values (' ' ,"
-                    + " '" + recorrido.getLlegada() + "', '" + recorrido.getSalida() + "',"
+            String query1 = "insert into recorrido (  Llegada, Salida, DireccionRetiro, DireccionEnvio)values ('" + recorrido.getLlegada() + "', '" + recorrido.getSalida() + "',"
                     + " '" + recorrido.getRetiro() + "','"+ recorrido.getEnvio() + "')";
             
-            String query2 = "insert into mediopago ( idMedioPago, TarjetaCredito, TarjetaDebito, Efectivo,) values (' ' ,"
-                    + " '" + mediopago.getTarjetaCredito() + "', '" + mediopago.getTarjetaDebito() + "',"
-                    + " '" + mediopago.getEfectivo() +  "')";
+            String query2 = "insert into mediopago (  Efectivo, TarjetaCredito, TarjetaDebito)values ('" +mediopago.getEfectivo() + "', '" +mediopago.getTarjetaCredito() + "','"+mediopago.getTarjetaDebito()  +  "')";
             
             
             

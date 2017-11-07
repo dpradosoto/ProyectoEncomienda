@@ -50,12 +50,12 @@
 
             <div id="headercontainer" class="container" >
                 <div  class="row">
-              
+
 
                     <nav   class="navbar navbar-inverse navbar-cutom-menu">
                         <div class="container-fluid">
-                         
-                           
+
+
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                     <span class="sr-only">Toggle navigation</span>
@@ -63,16 +63,16 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                               
+
                                 <a  href="index.jsp" class="navbar-brand brand " style="padding-top: 0px" >
                                     <img src="images/pepa.webp" alt="Logo UNAB" style="height:50px ; width:50px ; margin-left: 5px ;  ; padding-bottom: 0px " >
                                 </a>
 
                             </div>
-                                
-                          
+
+
                             <div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-bottom: 10px">
-                                      
+
 
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a href="encomienda.jsp">Encomienda</a></li>
@@ -82,15 +82,15 @@
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Servicio A</a></li>
                                             <li><a href="#">Servicio B</a></li>
-                                            
+
                                             <li role="separator" class="divider"></li>
 
                                         </ul>
 
                                 </ul>
                             </div>
-                           
-                            
+
+
                         </div>
                     </nav>
 
@@ -119,7 +119,7 @@
                                 <div class="form-group">
                                     <label for="Tipo">Tipo Encomienda</label>
                                     <div>
-                                        <select class="form-control" name="departamento">
+                                        <select class="form-control" name="Tipo">
                                             <option value="">Seleccione Tipo</option>
                                             <option value="Sobre">Sobre</option>
                                             <option value="Caja">Caja</option>
@@ -130,33 +130,33 @@
                                 <div class="well row">
                                     <h5>Tamaño (Cm.)</h5> 
                                     <div class="form-group ">
-                                        <label for="rut">Largo:</label>
+                                        <label for="largo"> Largo:</label>
                                         <input type="text" class="form-control" name="largo">
                                     </div>
                                     <div class="form-group">
-                                        <label for="nombre">Alto:</label>
+                                        <label for="alto">Alto:</label>
                                         <input type="text" class="form-control" name="alto">
 
                                     </div>
-                                      <div class="form-group">
-                                        <label for="nombre">Ancho:</label>
+                                    <div class="form-group">
+                                        <label for="ancho">Ancho:</label>
                                         <input type="text" class="form-control" name="ancho">
 
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="direccion">Peso:</label>
+                                    <label for="peso">Peso:</label>
                                     <input type="text" class="form-control" name="peso">
                                 </div>
 
 
                                 <div class="form-group">
-                                    <label for="Sbase">Direccion Retiro:</label>
+                                    <label for="Dretiro">Direccion Retiro:</label>
                                     <input type="text" class="form-control" name="Dretiro">
                                 </div>
 
-                                
+
 
 
 
@@ -177,13 +177,13 @@
                                 <input type="text" class="form-control" name="Dretiro">
                             </div>
 
-                            <label for="carga">Metodo de Pago</label>
+                            <label for="pago">Metodo de Pago</label>
                             <div>
-                                <select class="form-control" name="cargo">
+                                <select class="form-control" name="pago">
                                     <option value="">Eliga un Metodo</option>
-                                    <option value="basica">Efectivo</option>
-                                    <option value="media">Tarjeta Credito</option>
-                                    <option value="superior">Tarjeta Debito</option>
+                                    <option value="Efectivo">Efectivo</option>
+                                    <option value="Tarjeta Credito">Tarjeta Credito</option>
+                                    <option value="Tarjeta Debito">Tarjeta Debito</option>
                                 </select>
                             </div>
                         </div> 
@@ -191,12 +191,14 @@
 
 
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block " name="enviar" value="enviar"> 
-                                    <span class="glyphicon glyphicon-send" aria-hidden="true"></span>  Enviar Solicitud</button>
+                    <form name="form" method="post" action="Servicio" >
+                        <button type="submit" class="btn btn-primary btn-block " name="enviar" value="enviar" > 
+                            <span class="glyphicon glyphicon-send" aria-hidden="true"></span>  Enviar Solicitud</button>
+                    </form>
                 </div>
             </div>
 
-
+        </div>
     </body>
 
 </html>
