@@ -53,15 +53,15 @@ public class Recorrido implements Serializable {
     public Recorrido() {
     }
 
-    public Recorrido(Integer idRecorrido, String llegada, String salida, String retiro ,String envio, Collection<Servicio> servicioCollection) {
+    public Recorrido(Integer idRecorrido, String llegada, String salida, String retiro, String envio, Collection<Servicio> servicioCollection) {
         this.idRecorrido = idRecorrido;
         this.llegada = llegada;
         this.salida = salida;
-          this.retiro = retiro;
+        this.retiro = retiro;
         this.envio = envio;
         this.servicioCollection = servicioCollection;
     }
-    
+
     public Recorrido(Integer idRecorrido) {
         this.idRecorrido = idRecorrido;
     }
@@ -89,8 +89,8 @@ public class Recorrido implements Serializable {
     public void setSalida(String salida) {
         this.salida = salida;
     }
-    
-       public String getRetiro() {
+
+    public String getRetiro() {
         return retiro;
     }
 
@@ -105,7 +105,6 @@ public class Recorrido implements Serializable {
     public void setEnvio(String envio) {
         this.envio = envio;
     }
-
 
     public Collection<Servicio> getServicioCollection() {
         return servicioCollection;
@@ -139,5 +138,5 @@ public class Recorrido implements Serializable {
     public String toString() {
         return "Modelo.Recorrido[ idRecorrido=" + idRecorrido + " ]";
     }
-    
+
 }

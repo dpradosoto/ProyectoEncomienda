@@ -108,10 +108,12 @@
 
             <div class="col-xs-12 col-lg-7 aside">
                 <div class="well row">
+                    
+                     <form name="form" method="post" action="Servicio" >
                     <center>
                         <h3>Caracterisicas de la Encomienda</h3>     
                         <div class="col-sm-4 col-lg-6">                
-                            <form name="form" method="post" action="Control_empl">
+                           
 
 
 
@@ -128,25 +130,24 @@
                                 </div>
 
                                 <div class="well row">
-                                    <h5>Tamaño (Cm.)</h5> 
                                     <div class="form-group ">
-                                        <label for="largo"> Largo:</label>
+                                        <label for="largo"> (Cm.)Largo:</label>
                                         <input type="text" class="form-control" name="largo">
                                     </div>
                                     <div class="form-group">
-                                        <label for="alto">Alto:</label>
+                                        <label for="alto"> (Cm.)Alto:</label>
                                         <input type="text" class="form-control" name="alto">
 
                                     </div>
                                     <div class="form-group">
-                                        <label for="ancho">Ancho:</label>
+                                        <label for="ancho">(Cm.)Ancho:</label>
                                         <input type="text" class="form-control" name="ancho">
 
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="peso">Peso:</label>
+                                    <label for="peso">(Kg.)Peso:</label>
                                     <input type="text" class="form-control" name="peso">
                                 </div>
 
@@ -160,7 +161,7 @@
 
 
 
-                            </form>
+                          
 
                         </div>
                     </center>   
@@ -174,7 +175,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="Sbase">Nombre Receptor:</label>
-                                <input type="text" class="form-control" name="Dretiro">
+                                <input type="text" class="form-control" name="Receptor">
                             </div>
 
                             <label for="pago">Metodo de Pago</label>
@@ -191,7 +192,7 @@
 
 
                     </div>
-                    <form name="form" method="post" action="Servicio" >
+                    
                         <button type="submit" class="btn btn-primary btn-block " name="enviar" value="enviar" > 
                             <span class="glyphicon glyphicon-send" aria-hidden="true"></span>  Enviar Solicitud</button>
                     </form>

@@ -57,7 +57,7 @@ public class Mediopago implements Serializable {
         this.tarjetaDebito = tarjetaDebito;
         this.servicioCollection = servicioCollection;
     }
-    
+
     public Mediopago(Integer idMedioPago) {
         this.idMedioPago = idMedioPago;
     }
@@ -126,5 +126,5 @@ public class Mediopago implements Serializable {
     public String toString() {
         return "Modelo.Mediopago[ idMedioPago=" + idMedioPago + " ]";
     }
-    
+
 }
