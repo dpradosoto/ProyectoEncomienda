@@ -16,20 +16,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `mediopago`
+-- Dumping data for table `mediopago`
 --
 
-DROP TABLE IF EXISTS `mediopago`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `mediopago` (
-  `idMedioPago` int(11) NOT NULL AUTO_INCREMENT,
-  `Efectivo` varchar(45) DEFAULT NULL,
-  `TarjetaCredito` varchar(45) DEFAULT NULL,
-  `TarjetaDebito` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`idMedioPago`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+LOCK TABLES `mediopago` WRITE;
+/*!40000 ALTER TABLE `mediopago` DISABLE KEYS */;
+INSERT INTO `mediopago` VALUES (1,'null','Tarjeta Credito','null'),(2,'Efectivo','null','null'),(3,'Efectivo','null','null'),(4,'null','null','null'),(5,'null','null','null'),(6,'Efectivo','null','null');
+/*!40000 ALTER TABLE `mediopago` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -40,4 +34,4 @@ CREATE TABLE `mediopago` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-08  1:50:50
+-- Dump completed on 2017-11-08  1:55:17

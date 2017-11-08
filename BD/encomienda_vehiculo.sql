@@ -16,19 +16,13 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `vehiculo`
+-- Dumping data for table `vehiculo`
 --
 
-DROP TABLE IF EXISTS `vehiculo`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `vehiculo` (
-  `idVehiculo` int(11) NOT NULL AUTO_INCREMENT,
-  `Disponibilidad` varchar(45) DEFAULT NULL,
-  `Estado` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`idVehiculo`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+LOCK TABLES `vehiculo` WRITE;
+/*!40000 ALTER TABLE `vehiculo` DISABLE KEYS */;
+/*!40000 ALTER TABLE `vehiculo` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -39,4 +33,4 @@ CREATE TABLE `vehiculo` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-08  1:50:49
+-- Dump completed on 2017-11-08  1:55:17

@@ -16,23 +16,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `encomienda`
+-- Dumping data for table `encomienda`
 --
 
-DROP TABLE IF EXISTS `encomienda`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `encomienda` (
-  `idEncomienda` int(11) NOT NULL AUTO_INCREMENT,
-  `TipoEncomienda` varchar(45) DEFAULT NULL,
-  `Peso` varchar(45) NOT NULL,
-  `Largo` varchar(3) NOT NULL,
-  `Alto` varchar(3) NOT NULL,
-  `Ancho` varchar(3) NOT NULL,
-  `Nreceptor` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`idEncomienda`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+LOCK TABLES `encomienda` WRITE;
+/*!40000 ALTER TABLE `encomienda` DISABLE KEYS */;
+INSERT INTO `encomienda` VALUES (1,'Sobre','2','10','10','3',''),(2,'\" + tipo + \"','\" + peso + \"','\" +','\" +','\" +','\" + descripcion + \"'),(3,'Caja','44','11','22','33','dsad'),(4,'Caja','10','80','80','80','chinese'),(5,'Caja','11','11','11','11','wwwwwwww'),(6,'','','','','',''),(7,'','','','','',''),(8,'Caja','99','99','99','99','Chinese');
+/*!40000 ALTER TABLE `encomienda` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -43,4 +34,4 @@ CREATE TABLE `encomienda` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-08  1:50:49
+-- Dump completed on 2017-11-08  1:55:17

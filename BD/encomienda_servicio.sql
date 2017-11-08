@@ -16,30 +16,13 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `servicio`
+-- Dumping data for table `servicio`
 --
 
-DROP TABLE IF EXISTS `servicio`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `servicio` (
-  `IdServicio` int(11) NOT NULL AUTO_INCREMENT,
-  `cliente_Rut` int(11) NOT NULL,
-  `vehiculo_idVehiculo` int(11) NOT NULL,
-  `Encomienda_idEncomienda` int(11) NOT NULL,
-  `recorrido_idRecorrido` int(11) NOT NULL,
-  `mediopago_idMedioPago` int(11) NOT NULL,
-  PRIMARY KEY (`IdServicio`),
-  KEY `fk_Servicio_Encomienda1_idx` (`Encomienda_idEncomienda`),
-  KEY `fk_Servicio_recorrido1_idx` (`recorrido_idRecorrido`),
-  KEY `fk_Servicio_vehiculo1_idx` (`vehiculo_idVehiculo`),
-  KEY `fk_Servicio_mediopago1_idx` (`mediopago_idMedioPago`),
-  CONSTRAINT `fk_Servicio_encomienda` FOREIGN KEY (`Encomienda_idEncomienda`) REFERENCES `encomienda` (`idEncomienda`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Servicio_mediopago1` FOREIGN KEY (`mediopago_idMedioPago`) REFERENCES `mediopago` (`idMedioPago`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Servicio_recorrido1` FOREIGN KEY (`recorrido_idRecorrido`) REFERENCES `recorrido` (`idRecorrido`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Servicio_vehiculo1` FOREIGN KEY (`vehiculo_idVehiculo`) REFERENCES `vehiculo` (`idVehiculo`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+LOCK TABLES `servicio` WRITE;
+/*!40000 ALTER TABLE `servicio` DISABLE KEYS */;
+/*!40000 ALTER TABLE `servicio` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -50,4 +33,4 @@ CREATE TABLE `servicio` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-08  1:50:49
+-- Dump completed on 2017-11-08  1:55:17

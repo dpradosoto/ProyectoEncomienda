@@ -16,18 +16,13 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `trabajador`
+-- Dumping data for table `trabajador`
 --
 
-DROP TABLE IF EXISTS `trabajador`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `trabajador` (
-  `persona_Rut` int(11) NOT NULL,
-  KEY `fk_Trabajador_persona1_idx` (`persona_Rut`),
-  CONSTRAINT `fk_Trabajador_persona1` FOREIGN KEY (`persona_Rut`) REFERENCES `persona` (`Rut`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+LOCK TABLES `trabajador` WRITE;
+/*!40000 ALTER TABLE `trabajador` DISABLE KEYS */;
+/*!40000 ALTER TABLE `trabajador` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -38,4 +33,4 @@ CREATE TABLE `trabajador` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-08  1:50:50
+-- Dump completed on 2017-11-08  1:55:18

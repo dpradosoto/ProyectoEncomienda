@@ -16,21 +16,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `recorrido`
+-- Dumping data for table `recorrido`
 --
 
-DROP TABLE IF EXISTS `recorrido`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `recorrido` (
-  `idRecorrido` int(11) NOT NULL AUTO_INCREMENT,
-  `Llegada` varchar(45) DEFAULT NULL,
-  `Salida` varchar(45) DEFAULT NULL,
-  `DireccionRetiro` varchar(60) NOT NULL,
-  `DireccionEnvio` varchar(60) NOT NULL,
-  PRIMARY KEY (`idRecorrido`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+LOCK TABLES `recorrido` WRITE;
+/*!40000 ALTER TABLE `recorrido` DISABLE KEYS */;
+INSERT INTO `recorrido` VALUES (1,'dsad','null','das','null'),(2,'null','null','obispo','diagonal'),(3,'null','null','wqwwww','wwwwwwww'),(4,'null','null','',''),(5,'null','null','diagonal',''),(6,'null','null','Diagonal Paraguay, Santiago, Chile','Santa Victoria, Santiago, Chile');
+/*!40000 ALTER TABLE `recorrido` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -41,4 +34,4 @@ CREATE TABLE `recorrido` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-08  1:50:50
+-- Dump completed on 2017-11-08  1:55:17
