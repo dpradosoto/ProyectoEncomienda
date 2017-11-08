@@ -51,8 +51,8 @@ public class Encomienda implements Serializable {
     @Column(name = "Alto")
     private String alto;
     @Size(max = 3)
-    @Column(name = "Descripcion")
-    private String descripcion;
+    @Column(name = "Nreceptor")
+    private String Nreceptor;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "encomiendaidEncomienda")
     private Collection<Servicio> servicioCollection;
 
@@ -60,14 +60,14 @@ public class Encomienda implements Serializable {
         
     }
 
-    public Encomienda(Integer idEncomienda, String tipoEncomienda, String peso, String largo, String ancho, String alto , String descripcion, Collection<Servicio> servicioCollection) {
+    public Encomienda(Integer idEncomienda, String tipoEncomienda, String peso, String largo, String ancho, String alto , String Nreceptor, Collection<Servicio> servicioCollection) {
         this.idEncomienda = idEncomienda;
         this.tipoEncomienda = tipoEncomienda;
         this.peso = peso;
           this.largo = largo;
             this.ancho = ancho;
               this.alto = alto;
-        this.descripcion = descripcion;
+        this.Nreceptor = Nreceptor;
         this.servicioCollection = servicioCollection;
     }
     
@@ -121,12 +121,12 @@ public class Encomienda implements Serializable {
         this.ancho = ancho;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getNreceptor() {
+        return Nreceptor;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setNreceptor(String Nreceptor) {
+        this.Nreceptor = Nreceptor;
     }
 
     public Collection<Servicio> getServicioCollection() {

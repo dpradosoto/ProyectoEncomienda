@@ -29,20 +29,10 @@ CREATE TABLE `encomienda` (
   `Largo` varchar(3) NOT NULL,
   `Alto` varchar(3) NOT NULL,
   `Ancho` varchar(3) NOT NULL,
-  `Descripcion` varchar(45) DEFAULT NULL,
+  `Nreceptor` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idEncomienda`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `encomienda`
---
-
-LOCK TABLES `encomienda` WRITE;
-/*!40000 ALTER TABLE `encomienda` DISABLE KEYS */;
-INSERT INTO `encomienda` VALUES (1,'Sobre','2','10','10','3','');
-/*!40000 ALTER TABLE `encomienda` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -53,4 +43,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-06 23:34:46
+-- Dump completed on 2017-11-08  1:50:49

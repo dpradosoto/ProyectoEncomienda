@@ -37,7 +37,7 @@ public class EncomiendaDAO {
 
         connection = con.conexion();
            
-            String query = "insert into encomienda (  TipoEncomienda, Peso, Largo, Alto, Ancho, Descripcion)values ( '" + encomienda.getTipoEncomienda() + "', '" + encomienda.getPeso() + "','" + encomienda.getLargo() + "','" + encomienda.getAlto() + "','" + encomienda.getAncho() + "','" + encomienda.getDescripcion() + "')";
+            String query = "insert into encomienda (  TipoEncomienda, Peso, Largo, Alto, Ancho, Nreceptor)values ( '" + encomienda.getTipoEncomienda() + "', '" + encomienda.getPeso() + "','" + encomienda.getLargo() + "','" + encomienda.getAlto() + "','" + encomienda.getAncho() + "','" + encomienda.getNreceptor() + "')";
 
            
             Statement stmt = connection.createStatement();

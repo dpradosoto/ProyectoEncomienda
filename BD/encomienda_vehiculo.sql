@@ -29,15 +29,6 @@ CREATE TABLE `vehiculo` (
   PRIMARY KEY (`idVehiculo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `vehiculo`
---
-
-LOCK TABLES `vehiculo` WRITE;
-/*!40000 ALTER TABLE `vehiculo` DISABLE KEYS */;
-/*!40000 ALTER TABLE `vehiculo` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -48,4 +39,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-06 23:34:46
+-- Dump completed on 2017-11-08  1:50:49

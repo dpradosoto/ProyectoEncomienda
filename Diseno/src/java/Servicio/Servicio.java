@@ -79,7 +79,7 @@ public class Servicio extends HttpServlet {
         encom.setAlto(request.getParameter("alto"));
         encom.setAncho(request.getParameter("ancho"));
         encom.setPeso(request.getParameter("peso"));
-        encom.setDescripcion(request.getParameter("Receptor"));
+        encom.setNreceptor(request.getParameter("Receptor"));
         reco.setRetiro(request.getParameter("Dretiro"));
         reco.setEnvio(request.getParameter("Denvio"));
         

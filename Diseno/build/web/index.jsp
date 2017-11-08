@@ -74,16 +74,7 @@
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a href="encomienda.jsp">Encomienda</a></li>
                                     <li><a href="#">Traking</a></li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Servicio A</a></li>
-                                            <li><a href="#">Servicio B</a></li>
-
-                                            <li role="separator" class="divider"></li>
-
-                                        </ul>
-
+                                    <li><a href="#">User</a></li>
 
                                 </ul>
                             </div>
