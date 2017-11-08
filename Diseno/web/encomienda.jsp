@@ -225,7 +225,7 @@
                                 <label for="largo">Peso:</label>  
                                     <div class="input-group">
                                         
-                                        <input type="text" class="form-control" placeholder="Peso" name="alto" aria-describedby="basic-addon2">
+                                        <input type="text" class="form-control" placeholder="Peso" name="peso" aria-describedby="basic-addon2">
                                         <span class="input-group-addon" id="basic-addon2">Kg.</span>
                                     </div>
                                     <br>
