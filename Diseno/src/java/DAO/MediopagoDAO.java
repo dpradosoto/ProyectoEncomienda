@@ -22,12 +22,23 @@ import Modelo.Mediopago;
  */
 public class MediopagoDAO {
     
+    
+    public MediopagoDAO() {
+     
+
+    }
+    
+    
      private Connection connection;
     
-      public void addEncomienda( Mediopago mediopago) {
+      public void addMediopago( Mediopago mediopago) {
 
         try {
-            // Llegano de Tablas encomienda, recorrido y mediopago
+            
+             conexion con = new conexion();
+
+        connection = con.conexion();
+            // Llegano de Tabla mediopago
      
             String query2 = "insert into mediopago (  Efectivo, TarjetaCredito, TarjetaDebito)values ('" + mediopago.getEfectivo() + "', '" + mediopago.getTarjetaCredito() + "','" + mediopago.getTarjetaDebito() + "')";
 

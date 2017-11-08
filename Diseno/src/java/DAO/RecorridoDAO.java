@@ -25,10 +25,21 @@ public class RecorridoDAO {
     
      private Connection connection;
     
-      public void addEncomienda( Recorrido recorrido) {
+     
+     public RecorridoDAO() {
+     
+
+    }
+     
+     
+      public void addRecorrido( Recorrido recorrido) {
 
         try {
-            // Llegano de Tablas encomienda, recorrido y mediopago
+            
+             conexion con = new conexion();
+
+        connection = con.conexion();
+            // Llegano de Tabla recorrido 
       
             String query1 = "insert into recorrido (  Llegada, Salida, DireccionRetiro, DireccionEnvio)values ('" + recorrido.getLlegada() + "', '" + recorrido.getSalida() + "','" + recorrido.getRetiro() + "','" + recorrido.getEnvio() + "')";
 

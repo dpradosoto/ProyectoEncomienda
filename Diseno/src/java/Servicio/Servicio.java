@@ -25,9 +25,9 @@ public class Servicio extends HttpServlet {
     
     private static long serialVersionUID = 1L;
     
-    EncomiendaDAO encomiendadao;
-    MediopagoDAO mediopagodao;
-    RecorridoDAO recorridodao;
+    EncomiendaDAO encomiendadao = new EncomiendaDAO();
+    MediopagoDAO mediopagodao = new MediopagoDAO();
+    RecorridoDAO recorridodao = new RecorridoDAO() ;
     
     private static String edit_or_add = "/encomienda.jsp";
     
@@ -72,9 +72,7 @@ public class Servicio extends HttpServlet {
         Recorrido reco = new Recorrido();
         Mediopago mpag = new Mediopago();
         
-        
-        encom.setIdEncomienda(0);
-        //000000000000000
+ 
         
         encom.setTipoEncomienda(request.getParameter("Tipo"));
         encom.setLargo(request.getParameter("largo"));
@@ -83,7 +81,7 @@ public class Servicio extends HttpServlet {
         encom.setPeso(request.getParameter("peso"));
         encom.setDescripcion(request.getParameter("Receptor"));
         reco.setRetiro(request.getParameter("Dretiro"));
-        reco.setLlegada(request.getParameter("Denvio"));
+        reco.setEnvio(request.getParameter("Denvio"));
         
          String test=null;
         if ("Efectivo".equals(request.getParameter("pago"))) {
@@ -104,27 +102,13 @@ public class Servicio extends HttpServlet {
         
         String action = request.getParameter("enviar");
         
-        String test1 = request.getParameter("Tipo");
-         String test2 =request.getParameter("largo");
-         String test3 = request.getParameter("alto");
-         String test4 = request.getParameter("ancho");
-        String test5 =  request.getParameter("peso");
-          String test6 =  request.getParameter("Receptor");
-        String test7 =  request.getParameter("Dretiro");
-        String test8 =  request.getParameter("Denvio");
-        
-        System.out.println("--"+test+"--"+test1+"--"+test2+"--"+test3+"--"+test4+"--"+test5+"--"+test6+"--"+test7+"--"+test8+"--");
-        
-        
-                
-                
+             
         try {
             
-            //encomiendadao.addEncomienda(encom);
-            encomiendadao.addEncomienda(test1, test5, test2,test3, test4, test6);
+            encomiendadao.addEncomienda(encom);
             
-            mediopagodao.addEncomienda(mpag);
-            recorridodao.addEncomienda(reco);
+            mediopagodao.addMediopago(mpag);
+            recorridodao.addRecorrido(reco);
             
             
             
